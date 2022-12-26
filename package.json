@@ -1,0 +1,23 @@
+{
+  "name": "aws-stoploss",
+  "version": "1.0.0",
+  "description": "stop the loss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shruthi48/aws-stoploss.git"
+  },
+  "author": "Shruthi H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shruthi48/aws-stoploss/issues"
+  },
+  "homepage": "https://github.com/Shruthi48/aws-stoploss#readme",
+  "dependencies": {
+    "kiteconnect": "^4.0.1"
+  }
+}
