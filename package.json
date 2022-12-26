@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Shruthi48/aws-stoploss#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "kiteconnect": "^4.0.1"
   }
 }

@@ -1,21 +1,22 @@
 var KiteTicker = require("kiteconnect").KiteTicker;
 var KiteConnect = require("kiteconnect").KiteConnect;
-const https = require('https')
+const https = require('https');
+require('dotenv').config();
 
 let bot = {
-    token: '5569385327:AAHVZ8VdrQ9B9akjRKwxmM9T5jTNXzvNc6Y',
-    chatId: '-892422505'
+    token: process.env.TELEGRAM_TOKEN,
+    chatId: process.env.TELEGRAM_CHAT_ID
 }
 
 
 var ticker = new KiteTicker({
-    api_key: "556jieo94zf7e2ma",
-    access_token: "Sa2wv2KzP1ConkwjpmOyxV1q3cRtW7GO"
+    api_key: process.env.API_KEY,
+    access_token: process.env.ACCESS_TOKEN
 });
 
 var kc = new KiteConnect({
-    api_key: "556jieo94zf7e2ma",
-    access_token: "Sa2wv2KzP1ConkwjpmOyxV1q3cRtW7GO"
+    api_key: process.env.API_KEY,
+    access_token: process.env.ACCESS_TOKEN
 });
 
 let instrumentTokens = [];
@@ -39,7 +40,7 @@ ticker.on("reconnect", function(reconnect_count, reconnect_interval) {
 // init();
 
 function onTicks(ticks) {
-	 console.log("Ticks", ticks);
+	 // console.log("Ticks", ticks);
 }
 
 function sendMsg(msg) {
